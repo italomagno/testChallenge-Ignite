@@ -41,12 +41,12 @@ statementRouter.get('/:statement_id', getStatementOperationController.
 
 | Routes   | Request |Authenticated | Body| Headers |Route params | Response
 |---------|-------------|-------------|-------------|-------------|-------------|-------------|
-| /users       | post | - []       | {name,email,password}        | XXXXX | XXXXX| 201
-| /profile       | get  | - [x]     | XXXXX       | JWT | XXXXX| User profile
-| /statements/balance       | get  | - [x]     | XXXXX       | JWT | XXXXX| All Statements and total balance
-| /statements/deposit       | post  | - [x]     | {amount,description}       | JWT | XXXXX| Deposit informations and 201
-| /statements/withdraw       | post  | - [x]     | {amount,description}       | JWT | XXXXX| Withdraw informations and 201
-| /statements/:statement_id       | get  | - [x]     | {amount,description}       | JWT | statement_id | Withdraw informations and 201
+| /users       | post | :x:      | {name,email,password}        | XXXXX | XXXXX| 201
+| /profile       | get  | :heavy_check_mark:     | XXXXX       | JWT | XXXXX| User profile
+| /statements/balance       | get  | :heavy_check_mark:     | XXXXX       | JWT | XXXXX| All Statements and total balance
+| /statements/deposit       | post  | :heavy_check_mark:     | {amount,description}       | JWT | XXXXX| Deposit informations and 201
+| /statements/withdraw       | post  | :heavy_check_mark:     | {amount,description}       | JWT | XXXXX| Withdraw informations and 201
+| /statements/:statement_id       | get  | :heavy_check_mark:     | {amount,description}       | JWT | statement_id | Withdraw informations and 201
 
 
 
