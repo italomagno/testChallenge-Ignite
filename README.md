@@ -18,9 +18,12 @@
 :point_right: Mapa mental:
 
    ```mermaid
-    A[Create User]-->|Users|
-    --> B(Authenticate User)
-    --> B(Show user Profile)
+   graph TD;
+    A[Create User]-->|Users|;
+    |Users|--> B(Authenticate User)
+    |Users|--> C(Show user Profile)
+
+
     ```
 
 
