@@ -8,11 +8,11 @@ Api desenvolvida para auxiliar no controle financeiro pessoal.
 - [x] Autenticar um usuário
 - [x] Mostrar perfil de um usuário
 
-### :point_right: Funcionalidades relativas as transações:
+### :point_right: Funcionalidades relativas as Operações:
 
-- [x] Criar uma transação
+- [x] Criar uma operação
 - [x] Mostrar o balanço
-- [x] Mostrar uma transação específica
+- [x] Mostrar uma operação específica
 
 
 ### :point_right: Mapa mental:
@@ -26,27 +26,17 @@ Api desenvolvida para auxiliar no controle financeiro pessoal.
     E{Create statement}-->F(Get Balance);
     E{Create statement}-->G(Get Statement Operation);
   ```
-router.use('/', authenticationRouter);
-router.use('/users', usersRouter);
-router.use('/profile', userProfileRouter);
-router.use('/statements', statementRouter);
-
-statementRouter.get('/balance', getBalanceController.execute);
-statementRouter.post('/deposit', createStatementController.execute);
-statementRouter.post('/withdraw', createStatementController.execute);
-statementRouter.get('/:statement_id', getStatementOperationController.
-
 
 :point_right: Rotas da aplicação
 
 | Routes   | Request |Authenticated | Body| Headers |Route params | Response
 |---------|-------------|-------------|-------------|-------------|-------------|-------------|
 | /users       | post | :x:      | {name,email,password}        | XXXXX | XXXXX| 201
-| /profile       | get  | :heavy_check_mark:     | XXXXX       | JWT | XXXXX| User profile
-| /statements/balance       | get  | :heavy_check_mark:     | XXXXX       | JWT | XXXXX| All Statements and total balance
-| /statements/deposit       | post  | :heavy_check_mark:     | {amount,description}       | JWT | XXXXX| Deposit informations and 201
-| /statements/withdraw       | post  | :heavy_check_mark:     | {amount,description}       | JWT | XXXXX| Withdraw informations and 201
-| /statements/:statement_id       | get  | :heavy_check_mark:     | {amount,description}       | JWT | statement_id | Withdraw informations and 201
+| /profile       | get  | :heavy_check_mark:     | XXXXX       | Token-JWT | XXXXX| User profile
+| /statements/balance       | get  | :heavy_check_mark:     | XXXXX       | Token-JWT | XXXXX| All Statements and total balance
+| /statements/deposit       | post  | :heavy_check_mark:     | {amount,description}       | Token-JWT | XXXXX| Deposit informations and 201
+| /statements/withdraw       | post  | :heavy_check_mark:     | {amount,description}       | Token-JWT | XXXXX| Withdraw informations and 201
+| /statements/:statement_id       | get  | :heavy_check_mark:     | XXXXX       | Token-JWT | statement_id | Statement information
 
 
 
