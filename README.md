@@ -19,9 +19,10 @@
 
    ```mermaid
    graph TD;
-    A[Create User]-->|Users|
-    |Users|--> B(Authenticate User)
-    |Users|--> C(Show user Profile)
+   graph TD;
+    A(Create User)-->B(User);
+    B(User)-->C(Show user Profile);
+    B(User)-->D(Authenticate User);
   ```
 
 
