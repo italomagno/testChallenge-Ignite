@@ -21,7 +21,7 @@ Api desenvolvida para auxiliar no controle financeiro pessoal.
    graph TD;
     A(Create User)-->B(User);
     B(User)-->D(Authenticate User);
-    D(Authenticate User)-->E{Create statement};
+    D(Authenticate User)-->E(Create statement);
     D(Authenticate User)-->C(Show user Profile);
     E{Create statement}-->F(Statement);
     F(Statement)-->G(Get Balance);
