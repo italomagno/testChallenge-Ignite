@@ -7,7 +7,6 @@ import { ShowUserProfileUseCase } from "./ShowUserProfileUseCase"
 let inMemoryUsersRepository: InMemoryUsersRepository
 let createUserUseCase: CreateUserUseCase
 let showUserProfileUseCase: ShowUserProfileUseCase
-let authenticateUserUseCase: AuthenticateUserUseCase
 
 
 
@@ -16,7 +15,6 @@ describe("Show user Profile", () => {
   beforeEach(()=>{
     inMemoryUsersRepository = new InMemoryUsersRepository();
     createUserUseCase = new CreateUserUseCase(inMemoryUsersRepository)
-    authenticateUserUseCase = new AuthenticateUserUseCase(inMemoryUsersRepository)
     showUserProfileUseCase = new ShowUserProfileUseCase(inMemoryUsersRepository)
   })
 
