@@ -20,9 +20,9 @@ Api desenvolvida para auxiliar no controle financeiro pessoal.
    ```mermaid
    graph TD;
     A(Create User)-->B(User);
-    B(User)-->C(Show user Profile);
-    B(User)-->E{Create statement}
     B(User)-->D(Authenticate User);
+    D(Authenticate User)-->E{Create statement};
+    D(Authenticate User)-->C(Show user Profile);
     E{Create statement}-->F(Get Balance);
     E{Create statement}-->G(Get Statement Operation);
   ```
