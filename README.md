@@ -19,7 +19,6 @@
 
    ```mermaid
    graph TD;
-   graph TD;
     A(Create User)-->B(User);
     B(User)-->C(Show user Profile);
     B(User)-->D(Authenticate User);
