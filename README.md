@@ -23,7 +23,7 @@ Api desenvolvida para auxiliar no controle financeiro pessoal.
     B(User)-->D(Authenticate User);
     D(Authenticate User)-->E(Create statement);
     D(Authenticate User)-->C(Show user Profile);
-    E{Create statement}-->F(Statement);
+    E(Create statement)-->F(Statement);
     F(Statement)-->G(Get Balance);
     F(Statement)-->H(Get Statement Operation);
   ```
