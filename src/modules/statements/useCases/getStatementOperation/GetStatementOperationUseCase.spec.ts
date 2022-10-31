@@ -4,7 +4,6 @@ import { CreateUserUseCase } from "../../../users/useCases/createUser/CreateUser
 import { OperationType } from "../../entities/Statement"
 import { InMemoryStatementsRepository } from "../../repositories/in-memory/InMemoryStatementsRepository"
 import { CreateStatementUseCase } from "../createStatement/CreateStatementUseCase"
-import { GetBalanceUseCase } from "../getBalance/GetBalanceUseCase"
 import { GetStatementOperationUseCase } from "./GetStatementOperationUseCase"
 
 
